@@ -2,7 +2,7 @@ from sqlalchemy import Column,create_engine,Integer,String
 from sqlalchemy.orm import declarative_base,sessionmaker
 from fastapi import FastAPI
 
-angine=create_engine('sqlite:///data_user.db')
+angine=create_engine('sqlite:///CRUD_SQLalchemy/data_user.db')
 Session=sessionmaker(bind=angine)
 session=Session()
 
